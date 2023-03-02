@@ -305,7 +305,7 @@ html{
     display: block;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
+.skills .skill .barras-skill{
     height: 8px;
     width: 80%;
     background-color: #131517;
@@ -318,4 +318,52 @@ html{
     top: 0;
     left: 0;
     height: 8px;
+}
+.skills .skill .barras-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #31A6C8;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 5s javascript forwards;
+    -webkit-animation: 5s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .php{
+    width: 0%;
+    animation: 5s php forwards;
+    -webkit-animation: 5s php forwards;
+}
+@keyframes php{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .laravel{
+    width: 0%;
+    animation: 5s laravel forwards;
+    -webkit-animation: 5s laravel forwards;
+}
+@keyframes laravel{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .barras-skill span:hover{
+    height: 41px;
+    width: 41px;
+    background-color: #31A6C8;
+    box-shadow: 2px 2px 2px 2px black;
+        
 }
